@@ -1,0 +1,15 @@
+extends layout-index
+
+block content
+		div(class="row" style="margin-top: 20px;")
+			.large-8.medium-8.small-10.small-centered.columns
+				form(action="/dologin.php" method="POST")
+					label(for="uname") User Name
+					input(type="text" name="uname" id="uname")
+
+					label(for="pword") Password
+					input(type="password" name="pword" id="pword")
+
+					input(type="submit" class="large button expand text-center" value="Login" )
+
+					small Need an account? #[a(href="/register/") Click Here to register!]

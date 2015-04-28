@@ -1,0 +1,36 @@
+nav(class="top-bar hide-for-print" data-topbar role="navigation")
+    ul.title-area
+        li.name
+            h1#[a(href="/home/") #[i.fa.fa-home] Home]
+        li(class="toggle-topbar menu-icon") #[a(href="#") #[span menu]]
+
+    section.top-bar-section
+        ul.right
+            li.divider
+            li#[a(href="/home/new-job/") #[i.fa.fa-plus-square] Create Job]
+            li.divider
+            li#[a(href="/home/jobs/") #[i.fa.fa-briefcase] Existing Job]
+            li.divider
+            li#[a(href="/home/job-list/") #[i.fa.fa-list] Job List]
+            li.divider
+            li#[a(href="/home/job-urgency/") #[i.fa.fa-bell] Job Urgency]
+            li.divider
+            li.has-dropdown
+                a(href="/home/job-reports/")#[i.fa.fa-book] Job Reports
+                ul.dropdown
+                    li#[a(href="/home/job-reports/#not-started") Not Started]
+                    li.divider
+                    li#[a(href="/home/job-reports/#in-progress") In Progress]
+            li.divider
+            li.has-dropdown
+                a(href="/home/job-stats/")#[i.fa.fa-bar-chart] Job Stats
+                ul.dropdown
+                    li#[a(href="/home/job-stats/#weekly") Weekly]
+                    li.divider
+                    li#[a(href="/home/job-stats/#monthly") Monthly]
+                    i.divider
+                    li#[a(href="/home/job-stats/#yearly") Yearly]
+            li.divider
+            li#[a(href="/home/user/")#[i.fa.fa-user] User Area]
+            li.divider
+            li#[a(href="/logout")#[i.fa.fa-sign-out] Logout]
